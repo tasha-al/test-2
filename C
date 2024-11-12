@@ -1,0 +1,12 @@
+def find_largest_number(int_list):
+     if len(int_list) == 0: 
+         return None # Return None if the list is empty 
+     largest = int_list[0] # Initialize the largest number with the first element
+     for num in int_list: 
+         if num > largest: 
+             largest = num
+         return largest
+         
+input_list = [34, 67, 23, 89, 12, 99, 24]
+largest_number = find_largest_number(input_list) 
+print("The largest number is:", largest_number)
